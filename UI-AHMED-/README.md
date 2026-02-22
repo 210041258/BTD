@@ -13,9 +13,8 @@ The UI is distributed in the notebook as shown below:
 
 ## Notes
 1. **Photo Reader:** Selects images with the highest probability for optimal reading.  
-2. **RGB vs Grayscale:** Switching to grayscale can improve efficiency and naturalness of the processing.  
-3. **Reporting:** Only the highest probability reading is included in the report.  
-4. **UX Enhancements:** The UI contains additional usability improvements.  
+2. **Reporting:** Only the highest probability reading is included in the report.  
+3. **UX Enhancements:** The UI contains additional usability improvements.  
 
 ## Assets
 ```json
