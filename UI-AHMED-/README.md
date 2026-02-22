@@ -1,22 +1,25 @@
+# Localhost UI Platform for Image Reading Model
 
+## Overview
+This platform runs a reading selection model using a difference operation (`-15`) and multiple prediction rounds (`20 × 10`) to improve the base model (v1.0).  
 
+- **Online Model:** Update the global `model_path` variable and URL. The instance will load instantly.  
+- **Offline Model:** Copy the model file into the folder and update the `sample` variable in `main_predicate.py`.  
 
+## UI Structure
+The UI is distributed in the notebook as shown below:
 
-# the ui creation as localhost website
+![UI Structure](https://github.com/user-attachments/assets/13aa330c-9afd-4274-9dc3-48cae8fa3cd7)
 
-## Creation of the platform of the reading up on selection two the -15 differnace (or operation) with 20 round * 10 predication to make the model more better on the basic model created version 1.0 , for more deatils open the file of the desgined in main_predicate.py , you can just change the model path variable global type and the url if it's online model and just call it it's instant will be ready , if it's offline copy model then just paste the size file in the folder and changer the variable sample ..> 
+## Notes
+1. **Photo Reader:** Selects images with the highest probability for optimal reading.  
+2. **RGB vs Grayscale:** Switching to grayscale can improve efficiency and naturalness of the processing.  
+3. **Reporting:** Only the highest probability reading is included in the report.  
+4. **UX Enhancements:** The UI contains additional usability improvements.  
 
-
-## this structure of the ui and the new distrubution upon the scale on the notebook 
-![image](https://github.com/user-attachments/assets/13aa330c-9afd-4274-9dc3-48cae8fa3cd7)
-
-
-## Note : the photo reader is best photo probability selection to be readed good with ratio of the probability 
-
-## Note : you can change RGB to grayscale object reading for the process , to be more natural of the better efficent actions .. 
-
-## Note : the report is created for just one probability which is the most reading probability of the model 
-
-## Note : UI wourld have some Ux BESIDED thats offer more better usage 
-
-## Assets : ["MODEL_PATH in main_predicate","yourfirebase-ifyouhaveprivateone-you can-use-mine-c059.json"]
+## Assets
+```json
+[
+  "MODEL_PATH in main_predicate",
+  "yourfirebase-ifyouhaveprivateone-you can-use-mine-c059.json"
+]
